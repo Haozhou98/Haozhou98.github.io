@@ -5,15 +5,24 @@ subtitle: PhD Candidate, Industrial Engineering | Northeastern University
 description: Explainable AI for Predictive Maintenance & Edge Deployment
 ---
 
+<div class="about-section">
+<div class="about-bio" markdown="1">
+
 Haozhou Zhou is a PhD candidate in Industrial Engineering at Northeastern University, supervised by Prof. [Sagar Kamarthi](https://coe.northeastern.edu/people/kamarthi-sagar/) and Prof. [Srinivasan Radhakrishnan](https://coe.northeastern.edu/people/radhakrishnan-srinivasan/). He received his Master's degree in Data Analytics Engineering from Northeastern and completed his Master thesis with supervision from Prof. Sagar Kamarthi. He received his Bachelor's degree in statistics from [Dongbei University of Finance and Economics](https://english.dufe.edu.cn). His research focuses on predictive maintenance, and he is interested in building interpretable predictors that are engineered for transfer into industrial environments.
+
+</div>
+<img src="/assets/images/headshot.jpg" alt="Haozhou (Hal) Zhou" class="headshot">
+</div>
 
 ## Selected Publications
 
-1. Wei Li, **Haozhou Zhou**, Srinivasan Radhakrishnan, and Sagar Kamarthi. "Explainable time series features for hard disk drive failure prediction." *Engineering Applications of Artificial Intelligence*, 152 (2025): 110674.
+1. Wei Li, **Haozhou Zhou**, Srinivasan Radhakrishnan, and Sagar Kamarthi. "Explainable time series features for hard disk drive failure prediction." *Engineering Applications of Artificial Intelligence*, 152 (2025): 110674. [[Paper-Parity Code](https://github.com/Haozhou98/pdm-edge-explainable-portfolio)] (Full code withheld; patent pending.)
 
 2. **Haozhou Zhou**, Wei Li, Srinivasan Radhakrishnan, and Sagar Kamarthi. "Feature Engineering Toolkit for Predictive Analytics in Engineering and Healthcare Informatics." *2025 Annual Reliability and Maintainability Symposium (RAMS)*, pp. 1-7. IEEE, 2025.
 
-3. **Haozhou Zhou**, Wei Li, and Sagar Kamarthi. "Hard Disk Drive Failure Prediction with Explainable Time-series Characteristics Tree and Large Language Model Hyperparameter Optimizer." *IISE Annual Conference. Proceedings*, pp. 1-6. Institute of Industrial and Systems Engineers (IISE), 2024.
+3. **Haozhou Zhou**, Wei Li, and Sagar Kamarthi. "Hard Disk Drive Failure Prediction with Explainable Time-series Characteristics Tree and Large Language Model Hyperparameter Optimizer." *IISE Annual Conference. Proceedings*, pp. 1-6. Institute of Industrial and Systems Engineers (IISE), 2024. [[Code](https://github.com/Haozhou98/hdd-SMART-fd-with-dt-llm-hpo)]
+
+[See full list →](/publications/)
 
 ## Teaching
 

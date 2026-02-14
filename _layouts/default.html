@@ -25,6 +25,11 @@
                 &nbsp;/&nbsp;
                 <a href="https://linkedin.com/in/haozhouzhou9810">LinkedIn</a>
             </p>
+            <nav class="site-nav">
+                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>About</a>
+                <a href="{{ '/publications/' | relative_url }}" {% if page.url == '/publications/' %}class="active"{% endif %}>Publications</a>
+                <a href="{{ '/talks/' | relative_url }}" {% if page.url == '/talks/' %}class="active"{% endif %}>Talks</a>
+            </nav>
         </header>
 
         <!-- Main content -->

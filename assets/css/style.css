@@ -56,6 +56,51 @@ header h1 {
     margin: 0;
 }
 
+.site-nav {
+    margin-top: 10px;
+}
+
+.site-nav a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0.95em;
+    color: #555555;
+}
+
+.site-nav a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.site-nav a.active {
+    font-weight: 700;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 1px;
+}
+
+/* ==========================================================
+   ABOUT SECTION (headshot + bio)
+   ========================================================== */
+
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.headshot {
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-bio p {
+    margin-bottom: 14px;
+}
+
 /* ==========================================================
    MAIN CONTENT
    ========================================================== */
@@ -182,5 +227,15 @@ footer a:hover {
     h2 {
         font-size: 1.3em;
         margin-top: 30px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot {
+        width: 140px;
+        height: 140px;
     }
 }
