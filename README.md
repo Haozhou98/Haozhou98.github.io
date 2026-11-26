@@ -7,7 +7,8 @@ Personal site. Built with Jekyll and served by GitHub Pages from the `main` bran
 | To change | Edit |
 |---|---|
 | Front-page bio | `index.md` (plain Markdown; a note at the bottom lists the phrases that become links later) |
-| Front-page photo | `photo` and `photo_alt` at the top of `index.md`; image files go in `assets/images/` |
+| Front-page photo | `photo` and `photo_alt` at the top of `index.md`; image files go in `assets/images/`. Its size and tone are the `.photo` line in `assets/css/site.css` |
+| Email address behind the envelope icon | `email` in `_config.yml` |
 | A post | one Markdown file in `_posts/` |
 | Teaching clips | `_data/teaching.yml` |
 | Misc page | `_data/misc.yml` |

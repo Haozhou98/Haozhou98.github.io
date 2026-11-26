@@ -4,12 +4,6 @@ layout: default
 <section class="bio">
 {{ content }}
 </section>
-
-<p class="contact">
-  <a class="quiet" href="mailto:{{ site.email }}">Email</a>
-  <a class="quiet" href="https://github.com/Haozhou98">GitHub</a>
-  <a class="quiet" href="https://linkedin.com/in/haozhouzhou9810">LinkedIn</a>
-</p>
 {% if page.photo %}
 <img class="photo" src="{{ page.photo | relative_url }}" alt="{{ page.photo_alt | escape }}">
 {% endif %}

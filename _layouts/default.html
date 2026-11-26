@@ -16,10 +16,12 @@
 {% endcomment %}
 {%- assign is_post = false -%}
 {%- if page.layout == "post" %}{% assign is_post = true %}{% endif %}
+{%- assign is_home = false -%}
+{%- if page.layout == "home" %}{% assign is_home = true %}{% endif %}
 <body>
 <div class="page">
   <div class="frame">
-    <header class="side">
+    <header class="side{% if is_home %} side-home{% endif %}">
       {%- if is_post %}
       <p class="site-name"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
       {%- else %}
@@ -34,6 +36,12 @@
         <a href="{{ '/teaching/' | relative_url }}"{% if page.section == "teaching" %} aria-current="page"{% endif %}>Teaching</a>
         {%- endif %}
         <a href="{{ '/misc/' | relative_url }}"{% if page.section == "misc" %} aria-current="page"{% endif %}>Misc</a>
+        {%- if is_home %}
+        <a class="mail" href="mailto:{{ site.email }}" aria-label="Email {{ site.email }}">
+          <span class="mail-address" aria-hidden="true">{{ site.email }}</span>
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="1"></rect><path d="M3.4 6.4 12 13l8.6-6.6"></path></svg>
+        </a>
+        {%- endif %}
       </nav>
     </header>
     <main{% if is_post %} class="post"{% endif %}>
