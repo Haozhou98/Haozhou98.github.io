@@ -1,0 +1,19 @@
+---
+layout: default
+title: Teaching
+section: teaching
+---
+<h2 class="label">Teaching</h2>
+{%- if site.data.teaching.size > 0 %}
+<ul class="clips">
+  {%- for clip in site.data.teaching %}
+  <li class="clip">
+    <div class="clip-frame">
+      <iframe src="{{ clip.embed_url }}" title="{{ clip.title | escape }}" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="clip-title">{{ clip.title | escape }}</p>
+    <p class="sub">{{ clip.course | escape }}</p>
+  </li>
+  {%- endfor %}
+</ul>
+{%- endif %}

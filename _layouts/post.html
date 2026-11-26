@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post-body">
+  <header class="post-head">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  </header>
+
+{{ content | replace: '<table>', '<div class="table-scroll"><table>' | replace: '</table>', '</table></div>' }}
+
+  <footer class="post-foot">
+    {%- if page.paper_title %}
+    <p>From the paper {% if page.paper_url %}<a href="{{ page.paper_url }}">{{ page.paper_title | escape }}</a>{% else %}{{ page.paper_title | escape }}{% endif %}{% if page.paper_venue %}, {{ page.paper_venue | escape }}{% endif %}{% if page.paper_year %}, {{ page.paper_year }}{% endif %}.{% if page.code_url %} <a href="{{ page.code_url }}">Code</a>.{% endif %}</p>
+    {%- endif %}
+    <a class="quiet back" href="{{ '/writing/' | relative_url }}">Back to Writing</a>
+  </footer>
+</article>

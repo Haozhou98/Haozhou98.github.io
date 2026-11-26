@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-
-    <!-- Link to stylesheet -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-    <!-- SEO plugin (auto-generated) -->
-    {% seo %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=EB+Garamond:ital,wght@0,400;1,400&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+{% feed_meta %}
 </head>
+{%- comment %}
+  Writing and Teaching appear in the nav once they have content:
+  a published post in _posts/, an entry in _data/teaching.yml.
+{% endcomment %}
+{%- assign is_post = false -%}
+{%- if page.layout == "post" %}{% assign is_post = true %}{% endif %}
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>{{ site.title }}</h1>
-            <p class="subtitle">{{ page.subtitle | default: site.description }}</p>
-            <p class="contact-line">
-                Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-                &nbsp;/&nbsp;
-                <a href="https://github.com/Haozhou98">GitHub</a>
-                &nbsp;/&nbsp;
-                <a href="https://linkedin.com/in/haozhouzhou9810">LinkedIn</a>
-            </p>
-            <nav class="site-nav">
-                <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>About</a>
-                <a href="{{ '/publications/' | relative_url }}" {% if page.url == '/publications/' %}class="active"{% endif %}>Publications</a>
-                <a href="{{ '/talks/' | relative_url }}" {% if page.url == '/talks/' %}class="active"{% endif %}>Talks</a>
-            </nav>
-        </header>
-
-        <!-- Main content -->
-        <main>
-            {{ content }}
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <p>The best way to contact me is via <a href="mailto:{{ site.email }}">email</a>.</p>
-            <p>&copy; 2026 {{ site.author }}. Powered by <a href="https://jekyllrb.com/">Jekyll</a>. Last updated: February 2026.</p>
-        </footer>
-    </div>
+<div class="page">
+  <div class="frame">
+    <header class="side">
+      {%- if is_post %}
+      <p class="site-name"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
+      {%- else %}
+      <h1 class="site-name"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      {%- endif %}
+      <nav aria-label="Main">
+        <a href="{{ '/' | relative_url }}"{% if page.section == "about" %} aria-current="page"{% endif %}>About</a>
+        {%- if site.posts.size > 0 %}
+        <a href="{{ '/writing/' | relative_url }}"{% if page.section == "writing" %} aria-current="page"{% endif %}>Writing</a>
+        {%- endif %}
+        {%- if site.data.teaching.size > 0 %}
+        <a href="{{ '/teaching/' | relative_url }}"{% if page.section == "teaching" %} aria-current="page"{% endif %}>Teaching</a>
+        {%- endif %}
+        <a href="{{ '/misc/' | relative_url }}"{% if page.section == "misc" %} aria-current="page"{% endif %}>Misc</a>
+      </nav>
+    </header>
+    <main{% if is_post %} class="post"{% endif %}>
+{{ content }}
+    </main>
+  </div>
+</div>
 </body>
 </html>

@@ -1,52 +1,35 @@
-# ========================================
-# Site Settings
-# ========================================
-
+# Site settings
 title: "Haozhou (Hal) Zhou"
-description: "Explainable AI for Predictive Maintenance & Edge Deployment"
 author: "Haozhou Zhou"
 email: "zhou.haoz@northeastern.edu"
 url: "https://haozhou98.github.io"
-baseurl: ""  # User site at Haozhou98.github.io
+baseurl: ""
 
-# ========================================
-# Theme
-# ========================================
-
-theme: minima  # The 'minima' theme handles most styling
-
-# ========================================
-# Plugins
-# ========================================
-
+# Plugins (both are supported by GitHub Pages)
 plugins:
-  - jekyll-feed       # Generates RSS feed
-  - jekyll-seo-tag    # Auto-adds SEO meta tags
-
-# ========================================
-# Build Settings
-# ========================================
-
-# Files/folders to EXCLUDE from the build
-exclude:
-  - Gemfile           # Ruby dependency file
-  - Gemfile.lock      # Lock file
-  - README.md         # GitHub readme
-  - WEBPAGE_DEV_*.md  # Development docs (not part of site)
-  - HAOZHOU98-*.md    # Build prompt (not part of site)
-  - .gitignore        # Git config
-
-# Files to INCLUDE even if they start with underscore
-include: []
-
-# ========================================
-# Markdown Processor
-# ========================================
+  - jekyll-feed
+  - jekyll-seo-tag
 
 markdown: kramdown
 
-# ========================================
-# Output Settings
-# ========================================
+# Posts live at /writing/<title>/
+permalink: /writing/:title/
 
-permalink: /:title/  # URL structure for posts (optional)
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      section: writing
+
+# Kept out of the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - WEBPAGE_DEV_*.md
+  - HAOZHOU98-*.md
+  - .gitignore
+  - node_modules
+  - vendor

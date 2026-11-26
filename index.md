@@ -1,31 +1,24 @@
 ---
 layout: home
-title: Haozhou (Hal) Zhou
-subtitle: PhD Candidate, Industrial Engineering | Northeastern University
-description: Explainable AI for Predictive Maintenance & Edge Deployment
+section: about
+photo: /assets/images/talk.jpg
+photo_alt: Hal giving a conference talk, seen from the back of the room
 ---
+I try to tell when machines are about to break, in a way engineers can trust.
 
-<div class="about-section">
-<div class="about-bio" markdown="1">
+I'm a PhD candidate in industrial engineering at Northeastern, working on condition monitoring for critical energy equipment. Mostly that means building failure predictors that can explain themselves and are cheap enough to actually run. I write up what I learn along the way.
 
-Haozhou Zhou is a PhD candidate in Industrial Engineering at Northeastern University, supervised by Prof. [Sagar Kamarthi](https://coe.northeastern.edu/people/kamarthi-sagar/) and Prof. [Srinivasan Radhakrishnan](https://coe.northeastern.edu/people/radhakrishnan-srinivasan/). He received his Master's degree in Data Analytics Engineering from Northeastern and completed his Master thesis with supervision from Prof. Sagar Kamarthi. He received his Bachelor's degree in statistics from [Dongbei University of Finance and Economics](https://english.dufe.edu.cn). His research focuses on predictive maintenance, and he is interested in building interpretable predictors that are engineered for transfer into industrial environments.
+I also teach data mining and manufacturing labs.
 
-</div>
-<img src="/assets/images/headshot.jpg" alt="Haozhou (Hal) Zhou" class="headshot">
-</div>
+{% comment %}
+Four phrases above become links once there is something behind them:
 
-## Selected Publications
+  explain themselves             -> the hard-drive failure post
+  cheap enough to actually run   -> the language-model condition-monitoring post
+  write up                       -> /writing/   (after the first post is published)
+  teach                          -> /teaching/  (after the first clip is added)
 
-1. Wei Li, **Haozhou Zhou**, Srinivasan Radhakrishnan, and Sagar Kamarthi. "Explainable time series features for hard disk drive failure prediction." *Engineering Applications of Artificial Intelligence*, 152 (2025): 110674. [[Paper-Parity Code](https://github.com/Haozhou98/pdm-edge-explainable-portfolio)] (Full code withheld; patent pending.)
+To add one, wrap the phrase in a Markdown link, for example:
 
-2. **Haozhou Zhou**, Wei Li, Srinivasan Radhakrishnan, and Sagar Kamarthi. "Feature Engineering Toolkit for Predictive Analytics in Engineering and Healthcare Informatics." *2025 Annual Reliability and Maintainability Symposium (RAMS)*, pp. 1-7. IEEE, 2025.
-
-3. **Haozhou Zhou**, Wei Li, and Sagar Kamarthi. "Hard Disk Drive Failure Prediction with Explainable Time-series Characteristics Tree and Large Language Model Hyperparameter Optimizer." *IISE Annual Conference. Proceedings*, pp. 1-6. Institute of Industrial and Systems Engineers (IISE), 2024. [[Code](https://github.com/Haozhou98/hdd-SMART-fd-with-dt-llm-hpo)]
-
-[See full list →](/publications/)
-
-## Teaching
-
-- Northeastern University, IE4530/31 Manufacturing Systems and Techniques, Spring 2026.
-- Northeastern University, IE7275 Data Mining in Engineering, Fall 2025, Guest Lecturer.
-- Northeastern University, Graduate Teaching Assistant & Lab Instructor, 2022, 2023, 2024.
+  I [write up](/writing/) what I learn along the way.
+{% endcomment %}

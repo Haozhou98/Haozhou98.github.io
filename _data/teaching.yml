@@ -1,0 +1,9 @@
+# Teaching clips, in the order they should appear on /teaching/.
+# Videos are hosted on YouTube or Vimeo and embedded; never stored in this repo.
+# The Teaching link appears in the site nav once this file has at least one entry.
+#
+# To add a clip, copy the three lines below, remove the leading "# ", and fill them in:
+#
+# - title: Clip title
+#   course: Data Mining in Engineering
+#   embed_url: https://www.youtube.com/embed/VIDEO_ID

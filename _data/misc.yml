@@ -1,0 +1,85 @@
+# Content of /misc/. Sections and entries appear in the order written here.
+# Each entry: title (required), detail (second line), when (right edge), url (makes the title a link).
+
+- title: Experience
+  entries:
+    - title: FM Global
+      detail: Partner researcher, LEADERS Fellow
+      when: "2026–present"
+    - title: Northeastern University
+      detail: Research assistant
+      when: "2024–present"
+    - title: SANY Group
+      detail: Electrical controls engineer intern
+      when: "2023"
+    - title: Black Lake Technologies
+      detail: Data analyst intern
+      when: "2021"
+
+- title: Education
+  entries:
+    - title: PhD, Industrial Engineering
+      detail: Northeastern University
+      when: "expected 2027"
+    - title: MS, Data Analytics Engineering
+      detail: Northeastern University
+      when: "2022"
+    - title: BS, Statistics
+      detail: Dongbei University of Finance and Economics
+      when: "2020"
+
+# Newest first. Paper links use https://doi.org/ only.
+- title: Publications
+  entries:
+    - title: Condition Monitoring Framework Using Reliability-Centered Features and Large Language Models
+      detail: Haozhou Zhou, Wei Li, Sagar Kamarthi, Srinivasan Radhakrishnan
+      when: "in review"
+    - title: Hard Disk Drive Failure Prediction Method
+      detail: Sagar Kamarthi, Wei Li, Haozhou Zhou, Srinivasan Radhakrishnan. U.S. Patent 12,792,222.
+      when: "2026"
+    - title: Explainable time series features for hard disk drive failure prediction
+      detail: Wei Li, Haozhou Zhou, Srinivasan Radhakrishnan, Sagar Kamarthi. Engineering Applications of Artificial Intelligence.
+      when: "2025"
+      url: https://doi.org/10.1016/j.engappai.2025.110674
+    - title: Feature Engineering Toolkit for Predictive Analytics in Engineering and Healthcare Informatics
+      detail: Haozhou Zhou, Wei Li, Srinivasan Radhakrishnan, Sagar Kamarthi. Annual Reliability and Maintainability Symposium.
+      when: "2025"
+      url: https://doi.org/10.1109/RAMS48127.2025.10935234
+    - title: Wind Turbine Failure Prediction with Generative Language Models
+      detail: Haozhou Zhou, Chiyu Zhou, Srinivasan Radhakrishnan, Sagar Kamarthi. IISE Annual Conference.
+      when: "2025"
+      url: https://doi.org/10.21872/2025IISE_5132
+    - title: Hard Disk Drive Failure Prediction with Explainable Time-series Characteristics Tree and Large Language Model Hyperparameter Optimizer
+      detail: Haozhou Zhou, Wei Li, Sagar Kamarthi. IISE Annual Conference.
+      when: "2024"
+      url: https://doi.org/10.21872/2024IISE_7850
+
+- title: Awards
+  entries:
+    - title: LEADERS Fellowship
+      detail: Northeastern University
+      when: "2026"
+    - title: Yamamura Service and Leadership Award
+      detail: Northeastern University
+    - title: Outstanding Master's Student Leadership Award
+      detail: Northeastern University
+
+- title: Courses taught
+  entries:
+    - title: Manufacturing Systems and Techniques
+      detail: IE 4530/31, Northeastern University
+      when: "2026"
+    - title: Data Mining in Engineering
+      detail: IE 7275, guest lecturer, Northeastern University
+      when: "2025"
+    - title: Teaching assistant and lab instructor
+      detail: Data mining; Cyber-Physical Manufacturing Lab, Northeastern University
+      when: "2022–2024"
+
+- title: Service
+  entries:
+    - title: Session chair, Extended Reality and ML Applications
+      detail: IISE Annual Conference
+      when: "2025"
+    - title: Reviewer
+      detail: Institute of Industrial and Systems Engineers (IISE); IEEE International Conference on Automation Science and Engineering
