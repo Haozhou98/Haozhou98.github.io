@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ site.title }}</title>
+<link rel="canonical" href="{{ page.target | absolute_url }}">
+<meta http-equiv="refresh" content="0; url={{ page.target | relative_url }}">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<p><a href="{{ page.target | relative_url }}">{{ page.target_label | default: page.target }}</a></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Misc
+section: misc
+---
+<h2 class="label">Misc</h2>
+{%- for section in site.data.misc %}
+<section class="misc-section">
+  <h3 class="label-italic">{{ section.title | escape }}</h3>
+  <ul class="entries entries-{{ section.title | slugify }}">
+    {%- for entry in section.entries %}
+    <li class="entry">
+      <div class="entry-main">
+        <div>{% if entry.url %}<a class="title" href="{{ entry.url }}">{{ entry.title | escape }}</a>{% else %}{{ entry.title | escape }}{% endif %}</div>
+        {%- if entry.detail %}
+        <div class="sub">{{ entry.detail | escape }}</div>
+        {%- endif %}
+      </div>
+      {%- if entry.when %}
+      <div class="sub entry-when">{{ entry.when | escape }}</div>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
