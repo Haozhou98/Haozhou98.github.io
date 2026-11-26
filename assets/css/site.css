@@ -27,7 +27,7 @@ a.title:hover{text-decoration-color:var(--ink)}
 .label{margin:0;font-size:17px;line-height:1.45;font-weight:400}
 .label-italic{margin:0;font-size:17px;line-height:1.45;font-weight:400;font-style:italic}
 
-@media (max-width:700px){
+@media (max-width:779px){
   .side{flex:1 1 100%;align-items:flex-start;text-align:left}
   .side nav{flex-direction:row;flex-wrap:wrap;gap:0 22px}
 }
@@ -50,7 +50,7 @@ a.title:hover{text-decoration-color:var(--ink)}
 .mail:focus-visible svg{outline:1px solid var(--gray);outline-offset:4px}
 
 /* Narrow screens: the envelope joins the nav row; a tap opens the mail app, so no address is shown. */
-@media (max-width:700px){
+@media (max-width:779px){
   .side nav a.mail{margin-top:0;width:auto;align-items:center;justify-content:flex-start}
   .mail svg{margin-right:0}
   .mail-address{display:none}
